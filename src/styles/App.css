@@ -1,10 +1,20 @@
 .App {
   text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.votearrow {
+  width:      10px;
+  height:     10px;
+  border:     0px;
+  margin:     3px 2px 6px;
+  background: url("../assets/grayarrow.gif")
+  no-repeat;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,4 +45,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
