@@ -78,10 +78,12 @@ export const Story: FC<StoryProps> = (props) => {
             justifyContent: "flex-start",
           }}
         >
-          {itemState?.score} points by {itemState?.by} {" | "}{" "}
-          <a
-            href={`https://news.ycombinator.com/item?id=${props.id}`}
-          >
+          {itemState?.score} points by&nbsp;
+          <a href={`https://news.ycombinator.com/user?id=${itemState?.by}`}>
+            {itemState?.by}
+          </a>
+          &nbsp;|&nbsp;
+          <a href={`https://news.ycombinator.com/item?id=${props.id}`}>
             {itemState?.descendants} comments
           </a>
         </td>
